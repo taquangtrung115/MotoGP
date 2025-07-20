@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  motogp.api:
+    build:
+      context: .
+      dockerfile: MotoGP.API/Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Data Source=host.docker.internal;Initial Catalog=MotoGPDb;Integrated Security=False;User ID=sa;Password=Your_password123;TrustServerCertificate=True;
+    networks:
+      - motogpnet
+
+networks:
+  motogpnet:

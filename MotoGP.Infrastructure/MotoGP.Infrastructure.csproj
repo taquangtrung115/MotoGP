@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MotoGP.Application\MotoGP.Application.csproj" />
+    <ProjectReference Include="..\MotoGP.Domain\MotoGP.Domain.csproj" />
+    <ProjectReference Include="..\MotoGP.Persistence\MotoGP.Persistence.csproj" />
+    <ProjectReference Include="..\MotoGP.Shared\MotoGP.Shared.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
